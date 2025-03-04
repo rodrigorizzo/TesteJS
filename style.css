@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 body {
     background-color: rgb(255, 176, 152);
+    display: flex;
+    font-family: "Cabin", sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+#container {
+    background-color: rgb(255, 198, 181);
+    padding: 20px;
+    width: 450px;
+    max-width: 100%;
 }
 
 button {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
     background-color: rgb(255, 120, 79);
     border: 2px solid rgb(250, 60, 2);
     border-radius: 5px;
@@ -11,5 +30,49 @@ button {
 
 button:hover {
     background-color: rgb(248, 133, 98);
-    font-
+    cursor: pointer;
+}
+
+.numInicial {
+    display: inline;
+    
+}
+
+.numInicial input[type=number] {
+    font-size: 40px;
+    font-family: "Cabin";
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0 0 20px;
+    margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    visibility:inherit;
+}
+
+#multiplicador {
+    font-size: 60px;
+    font-weight: 800;
+    text-align:right;
+    display: block;
+}
+
+#resposta {
+    display: inline-block;
+    width:max-content;
+    font-size: 20px;
+
+    padding: 10px 30px;
+
+}
+
+#resultado {
+    display: block;
+    background-color: brown;
+    padding: 10px;
+    margin: 10px 0;
 }
