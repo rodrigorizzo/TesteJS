@@ -15,32 +15,39 @@
             <p> Aqui é um paragrafo</p>
         </div>
         <div class="numInicial">
-            <input type="number" min="0" max="0" value="0">
+            <input type="number" readonly min="0" max="0" value="0">
         </div>
         <div class="numInicial">
-            <input type="number" min="0" max="9" value="0">
+            <input id="milhar" type="number" min="0" max="9" value="0">
         </div>
         <div class="numInicial">
-            <input type="number" min="0" max="9" value="0">
+            <input id="centesimal" type="number" min="0" max="9" value="0">
         </div>
         <div class="numInicial">
-            <input type="number" min="0" max="9" value="0">
+            <input id="decimal" type="number" min="0" max="9" value="0">
         </div>
         <div class="numInicial">
-            <input type="number" min="0" max="9" value="0">
+            <input id="unidade" type="number" min="0" max="9" value="0">
         </div>
         <div>
-            <span id="multiplicador"> X 11</span>
+            <span id="multiplicador"> X </span>
+            <select id="mult">
+                <option value="11">11</option>
+                <option value="2">2</option>
+                <option value="4" disabled>4</option>
+                <option value="5" disabled>5</option>
+            </select>
         </div>
+
         <hr />
         <div>
-            <input id="resposta" type="text" placeholder="Apenas números">
+            <input id="resposta" type="text" placeholder="Digite sua resposta">
         </div>
         <div>
-            <span id="resultado">Resultado</span>
+            <p id="resultado">Resultado</p>
         </div>
         <div>
-            <button>Concluir</button> <button>Aleatório</button> <button>Limpar</button>
+            <button id="concluir">Concluir</button> <button id="random">Aleatório</button> <button>Limpar</button>
         </div>
     </div>
     <script src="script.js"></script>
